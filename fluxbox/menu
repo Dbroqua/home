@@ -1,0 +1,34 @@
+[begin] (fluxbox)
+    [exec] (File manager) {pcmanfm} </usr/share/icons/nuoveXT2/24x24/apps/file-manager.png>
+    [exec] (Terminal) {urxvt} </usr/share/icons/nuoveXT2/24x24/apps/terminal.png>
+    [exec] (Screencast) {vokoscreen} </usr/share/pixmaps/vokoscreen.png>
+    [submenu] (Dev) <~/Icons/dev.xpm>
+        [exec] (Sublime Text) {/opt/sublime_text/sublime_text} <~/Icons/sublime.xpm>
+        [exec] (Webstorm) {~/Software/WebStorm/bin/webstorm.sh} <~/Icons/webstorm.xpm>
+        [exec] (SmartGit) {/opt/smartgit/bin/smartgit.sh} </opt/smartgit/bin/smartgit-32.png>
+    [end]
+    [submenu] (Engineering) </usr/share/pixmaps/qcad.xpm>
+        [exec] (3DViewer) {g3dviewer} </usr/share/g3dviewer/glade/g3d48.png>
+        [exec] (Kicad) {kicad} </usr/share/icons/hicolor/32x32/apps/kicad.png>
+        [exec] (QCad) {qcad} </usr/share/icons/hicolor/64x64/apps/qcad.png>
+        [exec] (Freecad) {freecad} </usr/share/icons/hicolor/32x32/apps/freecad.png>
+        [exec] (Slic3r) {slic3r --gui} <~/Software/Slic3r/var/Slic3r.png>
+        [exec] (View 3D Scene) {view3dscene} </usr/share/icons/hicolor/48x48/apps/view3dscene.png>
+    [end]
+    [submenu] (Fluxbox menu) </usr/share/icons/nuoveXT2/24x24/apps/gnome-settings-theme.png>
+        [submenu] (Wallpapers) {}
+            [wallpapers] (~/ownCloud/Wallpapers) {fbsetbg -a}
+        [end]
+        [config] (Configuration)
+        [submenu] (Styles) {}
+            [stylesdir] (/usr/share/fluxbox/styles)
+            [separator]
+            [stylesdir] (~/.fluxbox/styles)
+        [end]
+    [end]
+    [submenu] (Sys) </usr/share/icons/nuoveXT2/24x24/apps/gnome-session-switch.png>
+        [restart] (Restart) </usr/share/icons/nuoveXT2/24x24/apps/gnome-session-switch.png>
+        [exec] (Shutdown) {sudo shutdown now} </usr/share/icons/nuoveXT2/24x24/apps/gnome-session-halt.png>
+        [exec] (Reboot) {sudo shutdown now -r} </usr/share/icons/nuoveXT2/24x24/apps/gnome-session-reboot.png>
+    [end]
+[end]

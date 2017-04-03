@@ -1,0 +1,27 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=Mail) (class=Icedove) (role=3pane)
+  [Workspace]	{1}
+  [Head]	{1}
+  [Dimensions]	{90% 90%}
+  [Position]	(UPPERLEFT)	{0% 0%}
+  [Close]	{yes}
+[end]
+[app] (name=spotify) (class=Spotify)
+  [Workspace]	{3}
+  [Head]	{1}
+  [Dimensions]	{100% 100%}
+  [Position]	(UPPERLEFT)	{0% 0%}
+[end]
+[app] (name=urxvt) (class=URxvt)
+  [Dimensions]	{90% 90%}
+  [Position]	(UPPERLEFT)	{5% 5%}
+  [Close]	{yes}
+[end]
+[app] (name=pcmanfm) (class=Pcmanfm)
+  [Dimensions]	{90% 90%}
+  [Position]	(UPPERLEFT)	{5% 5%}
+  [Close]	{yes}
+[end]
