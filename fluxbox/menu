@@ -16,6 +16,7 @@
         [exec] (Slic3r) {slic3r --gui} <~/Software/Slic3r/var/Slic3r.png>
         [exec] (View 3D Scene) {view3dscene} </usr/share/icons/hicolor/48x48/apps/view3dscene.png>
     [end]
+    [exec] (Minecraft) {java -jar ~/Software/Minecraft.jar} <~/Icons/minecraft.png>
     [submenu] (Fluxbox menu) </usr/share/icons/nuoveXT2/24x24/apps/gnome-settings-theme.png>
         [submenu] (Wallpapers) {}
             [wallpapers] (~/ownCloud/Wallpapers) {fbsetbg -a}
