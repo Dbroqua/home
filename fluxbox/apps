@@ -16,12 +16,12 @@
   [Position]	(UPPERLEFT)	{0% 0%}
 [end]
 [app] (name=urxvt) (class=URxvt)
-  [Dimensions]	{90% 90%}
+  [Dimensions]	{90% 89%}
   [Position]	(UPPERLEFT)	{5% 5%}
   [Close]	{yes}
 [end]
 [app] (name=pcmanfm) (class=Pcmanfm)
-  [Dimensions]	{90% 90%}
-  [Position]	(UPPERLEFT)	{5% 5%}
+  [Dimensions]	{50% 100%}
+  [Position]	(UPPERLEFT)	{50% 0%}
   [Close]	{yes}
 [end]
