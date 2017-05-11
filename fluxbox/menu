@@ -3,9 +3,8 @@
     [exec] (Terminal) {urxvt} </usr/share/icons/nuoveXT2/24x24/apps/terminal.png>
     [exec] (Screencast) {vokoscreen} </usr/share/pixmaps/vokoscreen.png>
     [submenu] (Dev) <~/Icons/dev.xpm>
-        [exec] (Sublime Text) {/opt/sublime_text/sublime_text} </opt/sublime_text/Icon/32x32/sublime-text.png>
-        [exec] (Webstorm) {~/Software/WebStorm/bin/webstorm.sh} <~/Icons/webstorm.xpm>
-	[exec] (Robomongo) {~/Software/robomongo/bin/robomongo} <~/Icons/robomongo.png>
+        [exec] (Atom) {atom} </usr/share/atom/atom.png>
+        [exec] (Robomongo) {~/Software/robomongo/bin/robomongo} <~/Icons/robomongo.png>
         [exec] (SmartGit) {/opt/smartgit/bin/smartgit.sh} </opt/smartgit/bin/smartgit-32.png>
     [end]
     [submenu] (Engineering) </usr/share/pixmaps/qcad.xpm>
