@@ -80,7 +80,6 @@ zstyle ':completion:*:hosts' hosts $_ssh_config
 if [ -z "$SSH_AUTH_SOCK" ] ; then
     eval `ssh-agent -s`
     ssh-add ~/.ssh/id_rsa
-==== BASE ====
 fi
 
 # List of accounts to read the last tweet from, comma separated
