@@ -4,7 +4,7 @@
     [exec] (Terminal) {urxvt} </usr/share/icons/nuoveXT2/24x24/apps/terminal.png>
     [exec] (Screencast) {vokoscreen} </usr/share/pixmaps/vokoscreen.png>
     [submenu] (Dev) <~/Icons/dev.xpm>
-        [exec] (Atom) {atom} </usr/share/atom/atom.png>
+        [exec] (Atom) {atom} </usr/share/icons/hicolor/32x32/apps/atom.png>
         [exec] (Robomongo) {~/Software/robomongo/bin/robomongo} <~/Icons/robomongo.png>
         [exec] (SmartGit) {/opt/smartgit/bin/smartgit.sh} </opt/smartgit/bin/smartgit-32.png>
     [end]
@@ -15,6 +15,7 @@
         [exec] (Freecad) {freecad} </usr/share/icons/hicolor/32x32/apps/freecad.png>
         [exec] (Slic3r) {slic3r --gui} <~/Software/Slic3r/var/Slic3r.png>
         [exec] (View 3D Scene) {view3dscene} </usr/share/icons/hicolor/48x48/apps/view3dscene.png>
+	[exec] (Wings3D) {wings3d} </usr/share/icons/wings3d.xpm>
     [end]
     [exec] (Minecraft) {java -jar ~/Software/Minecraft.jar} <~/Icons/minecraft.png>
     [submenu] (Fluxbox menu) </usr/share/icons/nuoveXT2/24x24/apps/gnome-settings-theme.png>
