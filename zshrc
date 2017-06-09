@@ -72,6 +72,7 @@ alias bat_details="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
 screenfetch
 fortune fr/bd
+pydf -h
 
 zstyle -s ':completion:*:hosts' hosts _ssh_config
 [[ -r ~/.ssh/config ]] && _ssh_config+=($(cat ~/.ssh/config | sed -ne 's/Host[=\t ]//p'))
@@ -82,4 +83,4 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
     ssh-add ~/.ssh/id_rsa
 fi
 
-rivalcfg --color=#509ADB -e steady
+#rivalcfg --color=#509ADB -e steady
