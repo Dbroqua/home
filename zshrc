@@ -72,6 +72,7 @@ alias bat_details="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
 screenfetch
 fortune fr/bd
+dfc -dTw
 
 zstyle -s ':completion:*:hosts' hosts _ssh_config
 [[ -r ~/.ssh/config ]] && _ssh_config+=($(cat ~/.ssh/config | sed -ne 's/Host[=\t ]//p'))
@@ -113,3 +114,5 @@ export TTC_APIKEYS=true
 export TTC_UPDATE_INTERVAL=5
 
 rivalcfg --color=#509ADB -e steady
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
