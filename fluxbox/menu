@@ -17,6 +17,10 @@
         [exec] (View 3D Scene) {view3dscene} </usr/share/icons/hicolor/48x48/apps/view3dscene.png>
 	[exec] (Wings3D) {wings3d} </usr/share/icons/wings3d.xpm>
     [end]
+    [submenu] (Multimedia) </usr/share/icons/nuoveXT2/24x24/categories/applications-multimedia.png>
+	[exec] (xfburn) {xfburn} </usr/share/icons/nuoveXT2/24x24/devices/drive-optical.png>
+	[exec] (Sptofy) {spotify} </usr/share/spotify/icons/spotify-linux-24.png> 
+    [end]
     [exec] (Minecraft) {java -jar ~/Software/Minecraft.jar} <~/Icons/minecraft.png>
     [submenu] (Fluxbox menu) </usr/share/icons/nuoveXT2/24x24/apps/gnome-settings-theme.png>
         [submenu] (Wallpapers) {}
