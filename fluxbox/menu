@@ -8,10 +8,10 @@
         [exec] (Robomongo) {~/Software/robomongo/bin/robomongo} <~/Icons/robomongo.png>
         [exec] (SmartGit) {/opt/smartgit/bin/smartgit.sh} </opt/smartgit/bin/smartgit-32.png>
     [end]
-    [submenu] (Engineering) </usr/share/pixmaps/qcad.xpm>
+    [submenu] (Engineering) </usr/share/icons/hicolor/48x48/apps/librecad.png>
         [exec] (3DViewer) {g3dviewer} </usr/share/g3dviewer/glade/g3d48.png>
         [exec] (Kicad) {kicad} </usr/share/icons/hicolor/32x32/apps/kicad.png>
-        [exec] (QCad) {qcad} </usr/share/icons/hicolor/64x64/apps/qcad.png>
+        [exec] (LibreCAD) {librecad} </usr/share/icons/hicolor/48x48/apps/librecad.png>
         [exec] (Freecad) {freecad} </usr/share/icons/hicolor/32x32/apps/freecad.png>
         [exec] (Slic3r) {slic3r --gui} <~/Software/Slic3r/var/Slic3r.png>
         [exec] (View 3D Scene) {view3dscene} </usr/share/icons/hicolor/48x48/apps/view3dscene.png>
