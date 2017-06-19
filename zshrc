@@ -113,6 +113,6 @@ export TTC_APIKEYS=true
 # Refresh the dashboard every 20 minutes.
 export TTC_UPDATE_INTERVAL=5
 
-rivalcfg --color=#509ADB -e steady
+#rivalcfg --color=#509ADB -e steady
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
