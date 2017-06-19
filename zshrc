@@ -1,6 +1,6 @@
 export ZSH=/home/dbroqua/.oh-my-zsh
 
-ZSH_THEME="arrow"
+ZSH_THEME="aussiegeek"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
