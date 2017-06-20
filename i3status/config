@@ -7,25 +7,28 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
+	output_format = i3bar
         colors = true
         interval = 5
+	separator = "~"
 }
 
 order += "disk /"
 order += "disk /home"
 order += "run_watch DHCP"
 order += "path_exists VPN"
-order += "wireless wlan0"
+order += "wireless wlp2s0"
 order += "ethernet eth0"
+order += "battery 0"
 #order += "cpu_temperature 0"
 #order += "cpu_temperature 1"
-order += "load"
+#order += "load"
 order += "cpu_usage"
 order += "volume master"
 order += "tztime local"
 
-wireless wlan0 {
-        format_up = "W: (%quality at %essid, %bitrate) %ip"
+wireless wlp2s0 {
+        format_up = "W: %ip (%quality at %essid, %bitrate)"
         format_down = "W: down"
 }
 
@@ -44,16 +47,12 @@ path_exists VPN {
         path = "/proc/sys/net/ipv4/conf/tun0"
 }
 
-battery all {
-        format = "%status %percentage %remaining"
-}
-
 tztime local {
         format = "%Y-%m-%d %H:%M:%S"
 }
 
 load {
-        format = "%1min"
+        format = "Load: %1min"
 }
 
 disk "/" {
@@ -66,7 +65,7 @@ disk "/home" {
 
 volume master {
         format = "♪: %volume"
-        format_muted = "♪: muted (%volume)"
+        format_muted = "🎻: %volume"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
@@ -85,3 +84,16 @@ cpu_temperature 1 {
 	path = "/sys/bus/acpi/devices/LNXTHERM:01/thermal_zone/temp"
 
 }
+
+battery 0 {
+        format = "%status %percentage %remaining"
+        format_down = "No battery"
+        status_chr = "⚡ CHR:"
+        status_bat = "🔋 BAT:"
+        status_unk = "? UNK:"
+        status_full = "☻ FULL:"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
+}
+
+
