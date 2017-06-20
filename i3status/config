@@ -23,12 +23,18 @@ order += "battery 0"
 #order += "cpu_temperature 0"
 #order += "cpu_temperature 1"
 #order += "load"
-order += "cpu_usage"
+#order += "cpu_usage"
+order += "sysdata"
 order += "volume master"
 order += "tztime local"
 
+sysdata {
+    format = "CPU: {cpu_usage}%, MEM: {mem_used_percent}%"    
+}
+
 wireless wlp2s0 {
-        format_up = "W: %ip (%quality at %essid, %bitrate)"
+#        format_up = "W: %ip (%quality at %essid, %bitrate)"
+        format_up = "W: %ip (%essid)"
         format_down = "W: down"
 }
 
@@ -48,19 +54,15 @@ path_exists VPN {
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
-}
-
-load {
-        format = "Load: %1min"
+        format = "%m/%d %H:%M:%S"
 }
 
 disk "/" {
-        format = "Root: %percentage_free"
+        format = "/ %percentage_free"
 }
 
 disk "/home" {
-	format = "Home: %percentage_free"
+	format = "/home %percentage_free"
 }
 
 volume master {
@@ -69,20 +71,6 @@ volume master {
         device = "default"
         mixer = "Master"
         mixer_idx = 0
-}
-
-cpu_usage {
-	format = "CPU: %usage"
-}
-
-cpu_temperature 0 {
-	format = "Core 0: %degrees °C"
-	path = "/sys/bus/acpi/devices/LNXTHERM:00/thermal_zone/temp"
-}
-cpu_temperature 1 {
-	format = "Core 1: %degrees °C"
-	path = "/sys/bus/acpi/devices/LNXTHERM:01/thermal_zone/temp"
-
 }
 
 battery 0 {
