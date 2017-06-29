@@ -1,0 +1,10 @@
+[user]
+	name = dbroqua
+	email = dbroqua@mousur.org
+[gc]
+	autoDetach = false
+[core]
+	autocrlf = input
+
+[alias]
+    tree = log --graph --decorate --pretty=raw --abbrev-commit
