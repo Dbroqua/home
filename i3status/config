@@ -49,14 +49,14 @@ sysdata {
 
 wireless _first_ {
 #	format_up = "W: %ip (%quality at %essid, %bitrate)"
-	format_up = "W: %ip (%essid)"
-	format_down = "W: down"
+	format_up = "📶: %ip (%essid)"
+	format_down = "📶: down"
 }
 
 ethernet eth0 {
         # if you use %speed, i3status requires the cap_net_admin capability
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
+        format_up = "🖧: %ip (%speed)"
+        format_down = "🖧: down"
 }
 
 run_watch DHCP {
@@ -81,8 +81,8 @@ disk "/home" {
 }
 
 volume master {
-        format = "♪: %volume"
-        format_muted = "🔉: %volume"
+        format = "🔊 %volume"
+        format_muted = "🔇 %volume"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
