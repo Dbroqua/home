@@ -91,7 +91,7 @@ export TTC_BOTS='tinycarebot,selfcare_bot,magicrealismbot'
 export TTC_SAY_BOX="parrot"
 
 # List of folders to look into for `git` commits, comma separated.
-export TTC_REPOS='~/WebstormProjects/dbroqua'
+export TTC_REPOS='~/Projects/dbroqua'
 
 # The max directory-depth to look for git repositories in
 # the directories defined with `TTC_REPOS`. Note that the deeper
