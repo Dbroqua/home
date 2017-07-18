@@ -24,6 +24,7 @@
 ; (gtk_accel_path "<Actions>/ShellActions/Close" "<Primary>w")
 ; (gtk_accel_path "<Actions>/NavigationActions/Add Bookmark" "<Primary>d")
 ; (gtk_accel_path "<Actions>/IconViewActions/Manual Layout" "")
+; (gtk_accel_path "<Actions>/ExtensionsMenuGroup/CajaOpenTerminal::open_terminal" "")
 ; (gtk_accel_path "<Actions>/ShellActions/Zoom Normal" "<Primary>0")
 ; (gtk_accel_path "<Actions>/NavigationActions/Show Hide Extra Pane" "F3")
 ; (gtk_accel_path "<Actions>/DirViewActions/Create Link" "<Primary>m")
