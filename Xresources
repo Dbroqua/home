@@ -6,7 +6,8 @@ URxvt*scrollColor: #c2dd5a
 URxvt*scrollBar_floating: true
 URxvt*scrollstyle: plain
 URxvt.depth: 32
-URxvt.background: rgba:4444/4444/4444/AAAA
+!URxvt.background: rgba:4444/4444/4444/AAAA
+URxvt.background: rgba:5e5e/5e5e/5e5e/AAAA
 URxvt*foreground: #cecece
 URxvt*color0: #101010
 URxvt*color1: #f13a21
@@ -24,7 +25,11 @@ URxvt*color12: #0071ff
 URxvt*color13: #ef0051
 URxvt*color14: #4bb8fd
 URxvt*color15: #a020f0
-URxvt.font: xft:DejaVu Sans Mono:size=10
+URxvt.font: xft:monospace:pixelsize=10:antialias=true:hinting=true
+!URxvt.font: xft:DejaVu Sans Mono:size=10,
+!            xft:Ubuntu Mono:pixelsize=18:antialias=true:hinting=true,\
+!            xft:Source Code Pro:pixelsize=18:style=medium:antialias=true,\
+!            -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt.boldFont: xft:DejaVu Sans Mono:size=10
 URxvt.boldItalicFont: xft:DejaVu Sans Mono:italic:size=10
 URxvt.perl-ext-common: default,matcher,tabbed
