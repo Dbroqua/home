@@ -18,14 +18,8 @@ order += "disk /home"
 order += "wireless _first_"
 order += "ethernet eth0"
 order += "path_exists VPN"
-#order += "battery 0"
 order += "battery_level"
-##order += "cpu_temperature 0"
-##order += "cpu_temperature 1"
-##order += "load"
-##order += "cpu_usage"
 order += "sysdata"
-#order += "spotify"
 order += "volume master"
 order += "uptime"
 order += "tztime local"
@@ -39,7 +33,8 @@ spotify {
 
 battery_level {
     battery_id = all
-#    format = "{icon} {percent}% ({time_remaining})"
+    charging_character=""
+    blocks=""
     format = "{icon} {percent}%"
 }
 
@@ -48,32 +43,29 @@ sysdata {
 }
 
 wireless _first_ {
-#	format_up = "W: %ip (%quality at %essid, %bitrate)"
-	format_up = "📶 %ip (%essid)"
-	format_down = "📶 down"
+	format_up = " %ip (%essid)"
+	format_down = " down"
 }
 
 ethernet eth0 {
-        # if you use %speed, i3status requires the cap_net_admin capability
-        format_up = "💻 %ip (%speed)"
-        format_down = "💻 down"
+    format_up = " %ip (%speed)"
+    format_down = " down"
 }
 
 run_watch DHCP {
-        pidfile = "/var/run/dhclient*.pid"
+    pidfile = "/var/run/dhclient*.pid"
 }
 
 path_exists VPN {
-        # path exists when a VPN tunnel launched by nmcli/nm-applet is active
-        path = "/proc/sys/net/ipv4/conf/tun0"
+    path = "/proc/sys/net/ipv4/conf/tun0"
 }
 
 tztime local {
-        format = "%m/%d %H:%M:%S"
+    format = "%m/%d %H:%M:%S"
 }
 
 disk "/" {
-        format = "/ %percentage_free"
+    format = "/ %percentage_free"
 }
 
 disk "/home" {
@@ -81,22 +73,9 @@ disk "/home" {
 }
 
 volume master {
-        format = "🔊 %volume"
-        format_muted = "🔇 %volume"
-        device = "default"
-        mixer = "Master"
-        mixer_idx = 0
+    format = " %volume"
+    format_muted = " %volume"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
 }
-
-battery 0 {
-        format = "%status %percentage %remaining"
-        format_down = "No battery"
-        status_chr = "⚡ CHR:"
-        status_bat = "🔋 BAT:"
-        status_unk = "? UNK:"
-        status_full = "☻ FULL:"
-        path = "/sys/class/power_supply/BAT%d/uevent"
-        low_threshold = 10
-}
-
-
