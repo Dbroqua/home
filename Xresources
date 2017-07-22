@@ -25,7 +25,9 @@ URxvt*color12: #0071ff
 URxvt*color13: #ef0051
 URxvt*color14: #4bb8fd
 URxvt*color15: #a020f0
-URxvt.font: xft:monospace:pixelsize=10:antialias=true:hinting=true
+URxvt.font: xft:DejaVu Sans Mono:size=8:antialias=true:hinting=true
+!URxvt.font: xft:monospace:pixelsize=10:antialias=true:hinting=true,
+!URxvt.font: xft:Icons:size=10
 !URxvt.font: xft:DejaVu Sans Mono:size=10,
 !            xft:Ubuntu Mono:pixelsize=18:antialias=true:hinting=true,\
 !            xft:Source Code Pro:pixelsize=18:style=medium:antialias=true,\
