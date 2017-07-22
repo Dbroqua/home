@@ -1,0 +1,6 @@
+#! /bin/bash
+
+for i in "*.${1}"; do
+	iconv -f iso-8859-15 -t utf-8 ${i} > ${i}.tmp
+	mv ${i}.tmp ${i}
+done
