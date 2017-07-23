@@ -1,45 +1,77 @@
-URxvt.geometry: 94x47
-URxvt*saveLines: 10000
-URxvt*scrollBar: true
-URxvt*scrollBar_right: true
-URxvt*scrollColor: #c2dd5a
-URxvt*scrollBar_floating: true
-URxvt*scrollstyle: plain
-URxvt.depth: 32
-!URxvt.background: rgba:4444/4444/4444/AAAA
-URxvt.background: rgba:5e5e/5e5e/5e5e/AAAA
-URxvt*foreground: #cecece
-URxvt*color0: #101010
-URxvt*color1: #f13a21
-URxvt*color2: #93f91d
-URxvt*color3: #ffffff
-URxvt*color4: #004f9e
-URxvt*color5: #ec0048
-URxvt*color6: #2aa7e7
-URxvt*color7: #f2f2f2
-URxvt*color8: #1d202f
-URxvt*color9: #FF361E
-URxvt*color10: #ffc005
-URxvt*color11: #93ff00
-URxvt*color12: #0071ff
-URxvt*color13: #ef0051
-URxvt*color14: #4bb8fd
-URxvt*color15: #a020f0
-URxvt.font: xft:DejaVu Sans Mono:size=8:antialias=true:hinting=true
-!URxvt.font: xft:monospace:pixelsize=10:antialias=true:hinting=true,
-!URxvt.font: xft:Icons:size=10
-!URxvt.font: xft:DejaVu Sans Mono:size=10,
-!            xft:Ubuntu Mono:pixelsize=18:antialias=true:hinting=true,\
-!            xft:Source Code Pro:pixelsize=18:style=medium:antialias=true,\
-!            -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.boldFont: xft:DejaVu Sans Mono:size=8
-URxvt.boldItalicFont: xft:DejaVu Sans Mono:italic:size=8
-URxvt.perl-ext-common: default,matcher,tabbed
-URxvt.tabbed.tabbar-fg: 3
-URxvt.tabbed.tabbar-bg: 0
-URxvt.tabbed.tab-fg: 3
-URxvt.tabbed.tab-bg: 14
-URxvt.url-launcher: /usr/bin/xdg-open
-URxvt.matcher.button: 1
-URxvt.matcher.rend.0: Uline Bold fg5
-URxvt.iconFile: /usr/share/icons/Tango/scalable/apps/terminal.svg
+! Define base colors
+#define WHITE               #ffffff
+#define BLACK               #101010
+#define BLACK_LIGHT         #cecece
+#define GREY_EXTRA_LIGHT    #f2f2f2
+! Blue
+#define BLUE_EXTRA_LIGHT    #4bb8fd
+#define BLUE_SUPER_LIGHT    #2aa7e7
+#define BLUE_LIGHT          #0071ff
+#define BLUE                #004f9e
+#define BLUE_DARK           #1d202f
+! Purple
+#define PURPLE_LIGHT        #a020f0
+! Red
+#define RED_EXTRA_LIGHT     #ff361e
+#define RED_SUPER_LIGHT     #ec0048
+#define RED_LIGHT           #ef0051
+! Green
+#define GREEN_LIGHT         #93ff00
+! Amber
+#define AMBER_LIGHT         #ffc005
+
+
+! General settins
+URxvt.geometry:             94x47
+URxvt.saveLines:            10000
+URxvt.scrollBar:            true
+URxvt.scrollBar_right:      true
+URxvt.scrollColor:          BLUE_EXTRA_LIGHT
+URxvt.scrollBar_floating:   true
+URxvt.scrollstyle:          plain
+URxvt.cursorBlink:          true
+URxvt.cursorUnderline:      true
+
+! Colors
+! Blue
+URxvt.depth:                32
+URxvt.background:           rgba:5e5e/5e5e/5e5e/AAAA
+URxvt*foreground:           BLACK_LIGHT
+URxvt.cursorColor:          BLUE_EXTRA_LIGHT
+URxvt*color0:               BLACK
+URxvt*color1:               RED_EXTRA_LIGHT
+URxvt*color2:               GREEN_LIGHT
+URxvt*color3:               WHITE
+URxvt*color4:               BLUE
+URxvt*color5:               RED_SUPER_LIGHT
+URxvt*color6:               BLUE_SUPER_LIGHT
+URxvt*color7:               BLACK_LIGHT
+URxvt*color8:               BLUE_DARK
+URxvt*color9:               RED_EXTRA_LIGHT
+URxvt*color10:              AMBER_LIGHT
+URxvt*color11:              GREEN_LIGHT
+URxvt*color12:              BLUE_LIGHT
+URxvt*color13:              RED_LIGHT
+URxvt*color14:              BLUE_EXTRA_LIGHT
+URxvt*color15:              PURPLE_LIGHT
+
+! Fonts
+URxvt.font:                 xft:DejaVu Sans Mono:size=8:antialias=true:hinting=true
+URxvt.boldFont:             xft:DejaVu Sans Mono:size=8
+URxvt.boldItalicFont:       xft:DejaVu Sans Mono:italic:size=8
+
+! Extensions
+URxvt.perl-ext-common:      default,matcher,tabbed
+! Tab
+URxvt.tabbed.tabbar-fg:     4
+URxvt.tabbed.tabbar-bg:     0
+URxvt.tabbed.tab-fg:        7
+URxvt.tabbed.tab-bg:        14
+! Auto click
+URxvt.url-launcher:         /usr/bin/xdg-open
+
+URxvt.matcher.button:       1
+URxvt.matcher.rend.0:       Uline Bold fg5
+
+! Icon
+URxvt.iconFile:             /usr/share/icons/Tango/scalable/apps/terminal.svg
