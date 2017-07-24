@@ -117,7 +117,12 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t error -m 'Q' \
+    -b 'Exit' 'i3-msg exit' \
+    -b 'Suspend' 'systemctl suspend' \
+    -b 'Reboot' 'systemctl reboot' \
+    -b 'Halt' 'systemctl poweroff'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -153,6 +158,7 @@ bar {
     colors {
         statusline          #f2f2f2
         background          #3e3f3f
+        separator           #f2f2f2
         #color class       border  back.   text
         focused_workspace  #F3F4F5 #747C84 #F3F4F5
         active_workspace   #747C84 #747C84 #F3F4F5
