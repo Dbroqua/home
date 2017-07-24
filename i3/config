@@ -17,7 +17,7 @@ font pango:DejaVu Sans Mono 6
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec konsole
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -175,7 +175,7 @@ exec --no-startup-id i3-msg 'exec nm-applet &'
 exec --no-startup-id i3-msg 'exec brscan-skey &'
 exec --no-startup-id i3-msg 'exec nextcloud &'
 exec --no-startup-id i3-msg 'exec ssh-add &'
-exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/urxvt'
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/konsole'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/spotify'
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
@@ -186,7 +186,7 @@ workspace_layout tabbed
 bindsym $mod+l exec "~/Bin/lock.sh"
 
 # Open term
-bindsym $mod+x exec urxvt
+bindsym $mod+x exec konsole
 
 # Multimedia keys
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
