@@ -17,7 +17,7 @@ font pango:DejaVu Sans Mono 6
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec roxterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -33,7 +33,7 @@ bindsym $mod+d exec dmenu_run -fn 'Droid Sans Mono-8'
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-#bindsym $mod+l focus up
+bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
@@ -41,8 +41,6 @@ bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-bindsym Mod1+Tab focus right
-bindsym	Mod1+Shift+Tab focus left
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -167,7 +165,7 @@ bar {
     }
 }
 
-#exec --no-startup-id i3-msg 'exec xcompmgr -c -f -n &'
+# Startup apps
 exec --no-startup-id i3-msg 'exec xautolock -time 5 -locker ~/Bin/lock.sh -detectsleep &'
 exec --no-startup-id i3-msg 'exec blueman-applet &'
 exec --no-startup-id i3-msg 'exec pasystray &'
@@ -175,18 +173,20 @@ exec --no-startup-id i3-msg 'exec nm-applet &'
 exec --no-startup-id i3-msg 'exec brscan-skey &'
 exec --no-startup-id i3-msg 'exec nextcloud &'
 exec --no-startup-id i3-msg 'exec ssh-add &'
-exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/konsole'
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/roxterm'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/spotify'
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 
+# Default workspace layout
 workspace_layout tabbed
 
 # Screen lock
-bindsym $mod+l exec "~/Bin/lock.sh"
+#bindsym $mod+mod1+l exec "~/Bin/lock.sh"
+bindsym Scroll_Lock exec "~/Bin/lock.sh"
 
 # Open term
-bindsym $mod+x exec konsole
+bindsym $mod+x exec roxterm
 
 # Multimedia keys
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
