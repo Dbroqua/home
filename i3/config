@@ -182,7 +182,7 @@ exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 workspace_layout tabbed
 
 # Screen lock
-#bindsym $mod+mod1+l exec "~/Bin/lock.sh"
+bindsym $mod+mod1+l exec "~/Bin/lock.sh"
 bindsym Scroll_Lock exec "~/Bin/lock.sh"
 
 # Open term
