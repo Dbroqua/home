@@ -1,6 +1,8 @@
 export ZSH=/home/dbroqua/.oh-my-zsh
 
-ZSH_THEME="aussiegeek"
+#ZSH_THEME="aussiegeek"
+#ZSH_THEME="bureau"
+ZSH_THEME="gnzh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -44,7 +46,7 @@ ZSH_THEME="aussiegeek"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git git-flow compleat encode64 )
 
 # User configuration
 
