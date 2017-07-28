@@ -165,17 +165,24 @@ bar {
     }
 }
 
-# Startup apps
+# Launch auto lock session
 exec --no-startup-id i3-msg 'exec xautolock -time 5 -locker ~/Bin/lock.sh -detectsleep &'
+
+# Launch systray app
 exec --no-startup-id i3-msg 'exec blueman-applet &'
 exec --no-startup-id i3-msg 'exec pasystray &'
 exec --no-startup-id i3-msg 'exec nm-applet &'
 exec --no-startup-id i3-msg 'exec brscan-skey &'
 exec --no-startup-id i3-msg 'exec nextcloud &'
 exec --no-startup-id i3-msg 'exec ssh-add &'
+
+# Launch app on start session
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/google-chrome'
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/roxterm'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/spotify'
+
+# Set wallpaper
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 
 # Default workspace layout
@@ -183,7 +190,6 @@ workspace_layout tabbed
 
 # Screen lock
 bindsym $mod+mod1+l exec "~/Bin/lock.sh"
-bindsym Scroll_Lock exec "~/Bin/lock.sh"
 
 # Open term
 bindsym $mod+x exec roxterm
@@ -205,6 +211,6 @@ client.focused_inactive #333333 #333333 #888888 #292d2e
 client.unfocused        #333333 #333333 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 
-# No border
+# Remove border for some apps
 for_window [class="Spotify"] border none, move container to workspace 3
 for_window [class="Thunderbird"] border none, move container to workspace 2
