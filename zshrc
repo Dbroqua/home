@@ -139,3 +139,8 @@ export TTC_UPDATE_INTERVAL=5
 #rivalcfg --color=#509ADB -e steady
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Turn off bell
+if [ -n "$DISPLAY" ]; then
+    xset b off
+fi
