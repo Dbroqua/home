@@ -17,7 +17,7 @@ font pango:DejaVu Sans Mono 6
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec roxterm
+bindsym $mod+Return exec lilyterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -178,7 +178,7 @@ exec --no-startup-id i3-msg 'exec ssh-add &'
 
 # Launch app on start session
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/google-chrome'
-exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/roxterm'
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/lilyterm'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/spotify'
 
@@ -192,7 +192,7 @@ workspace_layout tabbed
 bindsym $mod+mod1+l exec "~/Bin/lock.sh"
 
 # Open term
-bindsym $mod+x exec roxterm
+bindsym $mod+x exec lilyterm
 
 # Multimedia keys
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
