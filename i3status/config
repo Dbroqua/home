@@ -7,10 +7,10 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-	output_format = i3bar
-        colors = true
-        interval = 5
-	separator = "~"
+	output_format = "i3bar"
+    colors = true
+    interval = 5
+	separator = "❱"
 }
 
 order += "disk /"
@@ -28,7 +28,7 @@ uptime {
 }
 
 spotify {
-        
+
 }
 
 battery_level {
@@ -39,7 +39,7 @@ battery_level {
 }
 
 sysdata {
-    format = "CPU: {cpu_usage}%, MEM: {mem_used_percent}%"    
+    format = "CPU: {cpu_usage}%, MEM: {mem_used_percent}%"
 }
 
 wireless _first_ {
