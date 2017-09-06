@@ -177,10 +177,10 @@ exec --no-startup-id i3-msg 'exec nextcloud &'
 exec --no-startup-id i3-msg 'exec ssh-add &'
 
 # Launch app on start session
-exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/google-chrome'
-exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/lilyterm'
-exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/thunderbird'
-exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/spotify'
+exec --no-startup-id i3-msg 'exec /usr/lib/chromium/chromium'
+exec --no-startup-id i3-msg 'exec /usr/bin/lilyterm'
+exec --no-startup-id i3-msg 'exec /usr/bin/thunderbird'
+exec --no-startup-id i3-msg 'exec /usr/bin/spotify'
 
 # Set wallpaper
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
@@ -219,3 +219,4 @@ client.urgent           #2f343a #900000 #ffffff #900000
 # Remove border for some apps
 for_window [class="Spotify"] border none, move container to workspace 3
 for_window [class="Thunderbird"] border none, move container to workspace 2
+for_window [class="Chromium"], move container to workspace 1
