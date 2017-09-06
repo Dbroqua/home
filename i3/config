@@ -166,7 +166,7 @@ bar {
 }
 
 # Launch auto lock session
-exec --no-startup-id i3-msg 'exec xautolock -time 5 -locker ~/Bin/lock.sh -detectsleep &'
+#exec --no-startup-id i3-msg 'exec xautolock -time 5 -locker ~/Bin/lock.sh -detectsleep &'
 
 # Launch systray app
 exec --no-startup-id i3-msg 'exec blueman-applet &'
@@ -197,10 +197,15 @@ bindsym $mod+x exec lilyterm
 # Multimedia keys
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle 
+# Spotify
 bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 bindsym XF86AudioNext exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+# Clementine
+bindsym Shift+XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.clementine /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+bindsym Shift+XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.clementine /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+bindsym Shift+XF86AudioNext exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.clementine /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 
 # Take Screenshot
 bindsym Print exec xfce4-screenshooter
