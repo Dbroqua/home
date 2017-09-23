@@ -86,8 +86,9 @@ alias grep="grep --color=auto -n"
 alias xres="xrdb ~/.Xresources"
 alias diff='diff --color=auto'
 
-
-
+#Slic3r
+alias slice="slic3r-prusa --load ~/Nextcloud/configs/Slic3r/prusa_brim.ini -m"
+alias slice-support="slic3r-prusa --load ~/Nextcloud/configs/Slic3r/prusa_brim_support.ini -m"
 
 # Battery Remaining
 alias bat="ibam --percentbattery"
