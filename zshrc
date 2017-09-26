@@ -90,7 +90,7 @@ alias diff='diff --color=auto'
 alias slice_prusa="slic3r-prusa --load ~/Nextcloud/configs/Slic3r/prusa_brim.ini -m"
 alias slice_prusa-support="slic3r-prusa --load ~/Nextcloud/configs/Slic3r/prusa_brim_support.ini -m"
 alias slice_k8200="slic3r-prusa --load ~/Nextcloud/configs/Slic3r/k8200_brim.ini -m"
-alias slice_k8200-support="slic3r-prusa --load ~/Nextcloud/configs/Slic3r/k8200_brim.ini -m"
+alias slice_k8200-support="slic3r-prusa --load ~/Nextcloud/configs/Slic3r/k8200_brim_support.ini -m"
 
 # Battery Remaining
 alias bat="ibam --percentbattery"
