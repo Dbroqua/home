@@ -187,15 +187,15 @@ exec --no-startup-id i3-msg 'exec /usr/bin/clementine'
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 
 # Default workspace layout
-workspace_layout tabbed
+#workspace_layout tabbed
 
 # Screen lock
 bindsym $mod+mod1+l exec "~/Bin/lock.sh"
 
 # Multimedia keys
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume `pactl info|grep Sink|cut -d: -f 3` +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume `pactl info|grep Sink|cut -d: -f 3` -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute `pactl info|grep Sink|cut -d: -f 3` toggle 
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume `pactl info|grep Sink|cut -d: -f 2` +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume `pactl info|grep Sink|cut -d: -f 2` -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute `pactl info|grep Sink|cut -d: -f 2` toggle 
 
 # Spotify
 bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
