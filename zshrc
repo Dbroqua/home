@@ -49,9 +49,6 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 plugins=(git git-flow compleat encode64 )
 
 # User configuration
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -144,3 +141,5 @@ export TTC_UPDATE_INTERVAL=5
 if [ -n "$DISPLAY" ]; then
     xset b off
 fi
+
+PATH=${PATH}:~/Bin
