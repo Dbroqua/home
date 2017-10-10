@@ -11,7 +11,7 @@
 
 TYPE='' # usb / sshfs
 CMD=rsync
-ARGS='-avz --delete --exclude /Nextcloud --exclude /.cache --exclude /.config/google-chrome-unstable --exclude /.config/google-chrome --exclude /Downloads --exclude /.thunderbird --exclude /Projects --exclude /Software --exclude /tmp'
+ARGS='-avz --delete --exclude /Nextcloud --exclude /.cache --exclude /.config/google-chrome-unstable --exclude /.config/google-chrome --exclude /Downloads --exclude /.thunderbird --exclude /Projects --exclude /Software --exclude /tmp --exclude /VirtualBox\ VMs'
 ORIG='/home/dbroqua/'
 DEST=''
 HOSTNAME=`hostname`
