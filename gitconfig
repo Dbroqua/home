@@ -7,7 +7,8 @@
 	autocrlf = input
 
 [alias]
-    tree = log --graph --decorate --pretty=raw --abbrev-commit
+    tree = log --pretty=oneline --graph --decorate --all
+    treefull = log --graph --decorate --pretty=raw --abbrev-commit
     ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
     diffpull = diff HEAD@{1}
