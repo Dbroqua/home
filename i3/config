@@ -221,3 +221,5 @@ for_window [class="Spotify"] border none, move container to workspace 3
 for_window [class="Clementine"] border none, move container to workspace 3
 for_window [class="Thunderbird"] border none, move container to workspace 2
 for_window [class="Google-Chrome"], move container to workspace 1
+
+for_window [class="Ristretto"] fullscreen enable
