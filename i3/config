@@ -113,8 +113,8 @@ bindsym Mod1+Shift+Control+d move container to workspace next
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+Shift+e exec "i3-nagbar -t error -m 'Q' \
@@ -191,7 +191,8 @@ exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 #workspace_layout tabbed
 
 # Screen lock
-bindsym $mod+mod1+l exec "~/Bin/lock.sh"
+bindsym $mod+Mod1+l exec "~/Bin/lock.sh"
+bindsym Mod1+Control+q exec "~/Bin/lock.sh"
 
 # Multimedia keys
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume `pactl info|grep Sink|cut -d: -f 2` +5%
