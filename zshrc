@@ -91,7 +91,8 @@ alias slice="~/Projects/dbroqua/slic3r_configs/slice.sh"
 alias bat="ibam --percentbattery"
 alias bat_details="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
-screenfetch
+#screenfetch
+neofetch
 fortune fr/bd
 dfc -dTw
 
