@@ -83,6 +83,7 @@ alias grep="grep --color=auto -n"
 alias xres="xrdb ~/.Xresources"
 alias diff='diff --color=auto'
 alias ssh='ssh -X'
+alias rp='mplayer http://radioperfecto.net-radio.fr/perfecto.mp3'
 
 #Slic3r
 alias slice="~/Projects/dbroqua/slic3r_configs/slice.sh"
