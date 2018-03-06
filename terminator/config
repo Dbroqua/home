@@ -1,0 +1,27 @@
+[global_config]
+  borderless = True
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  tab_position = hidden
+  title_font = DejaVu Sans Mono for Powerline 8
+  title_use_system_font = False
+[keybindings]
+  move_tab_left = <Primary><Shift>Left
+  move_tab_right = <Primary><Shift>Right
+  new_tab = <Primary>t
+  next_tab = <Primary>Right
+  prev_tab = <Primary>Left
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    font = DejaVu Sans Mono for Powerline 8
+    use_system_font = False

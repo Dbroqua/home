@@ -17,7 +17,7 @@ font pango:DejaVu Sans Mono 6
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec lilyterm
+bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -179,7 +179,7 @@ exec --no-startup-id i3-msg 'exec ssh-add &'
 
 # Launch app on start session
 exec --no-startup-id i3-msg 'exec /usr/bin/firefox'
-exec --no-startup-id i3-msg 'exec /usr/bin/lilyterm'
+exec --no-startup-id i3-msg 'exec /usr/bin/terminator'
 exec --no-startup-id i3-msg 'exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'exec /usr/bin/spotify'
 exec --no-startup-id i3-msg 'exec /usr/bin/clementine'
