@@ -92,6 +92,9 @@ alias slice="~/Projects/dbroqua/slic3r_configs/slice.sh"
 alias bat="ibam --percentbattery"
 alias bat_details="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
+# PiCam
+alias picam="MONGO_URL=192.168.1.6 MONGO_PORT=27017 MONGO_USER= MONGO_PASSWORD= APP_URL=http://127.0.0.1:3000/ nodemon"
+
 #screenfetch
 neofetch
 fortune fr/bd
