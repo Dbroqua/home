@@ -1,3 +1,4 @@
+export TERM="xterm-256color"
 export ZSH=/home/dbroqua/.oh-my-zsh
 
 #ZSH_THEME="gnzh"
